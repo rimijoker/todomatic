@@ -87,6 +87,7 @@ export default function Todo(props) {
         </button>
         <button
           type="button"
+          data-testid={props.id}
           className="btn btn__danger"
           onClick={() => props.deleteTask(props.id)}
         >
